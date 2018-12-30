@@ -1,0 +1,36 @@
+@echo off
+title Windows Netstat Netwrok Scan
+color f
+::start "" scancheck.bat
+echo NETSTAT SCAN IN PROGRESS...
+timeout 2 >nul
+netstat -t
+timeout 2 >nul
+
+echo.
+echo.
+echo.
+color c
+echo foreign hackers found from india
+::timeout 2 >nul
+echo the hackers are stealing credit card and facebook login
+::timeout 3 >nul
+echo.
+echo blocking pc from microsoft networks and obtaining scan results
+::timeout 2 >nul
+echo opening scan results...
+timeout 1 >nul
+::start "" iexplore www.google.com
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+
+pause >nul

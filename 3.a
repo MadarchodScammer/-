@@ -1,0 +1,71 @@
+On Error Resume Next
+Set WshShell = WScript.CreateObject("WScript.Shell")
+WshShell.run "chrome.exe"
+WScript.Sleep 5000
+WshShell.run "https://www.youtube.com/channel/UCDaVHtO7YG1sqT6HBibRHHw/about"
+WScript.Sleep 5500
+WshShell.SendKeys "{TAB}"
+WScript.Sleep 20
+WshShell.SendKeys "{TAB}"
+WScript.Sleep 20
+WshShell.SendKeys "{TAB}"
+WScript.Sleep 20
+WshShell.SendKeys "{TAB}"
+WScript.Sleep 20
+WshShell.SendKeys "{TAB}"
+WScript.Sleep 20
+WshShell.SendKeys "{TAB}"
+WScript.Sleep 20
+WshShell.SendKeys "{TAB}"
+WScript.Sleep 20
+WshShell.SendKeys "{TAB}"
+WScript.Sleep 20
+WshShell.SendKeys "{TAB}"
+WScript.Sleep 20
+WshShell.SendKeys "{TAB}"
+WScript.Sleep 20
+WshShell.SendKeys "{TAB}"
+WScript.Sleep 20
+WshShell.SendKeys "{TAB}"
+WScript.Sleep 20
+WshShell.SendKeys "{TAB}"
+WScript.Sleep 20
+WshShell.SendKeys "{TAB}"
+WScript.Sleep 20
+WshShell.SendKeys "{TAB}"
+
+WshShell.SendKeys "{ENTER}"
+WshShell.run "www.google.com/search?q=ststosa"
+WScript.Sleep 4000
+WshShell.run "chrome.exe"
+WScript.Sleep 500
+WshShell.Run "www.windows93.net"
+WScript.Sleep 1500
+WshShell.SendKeys "{F11}"
+
+WScript.Sleep 7000
+treescan = WshShell.ExpandEnvironmentStrings("""%localappdata%\microsoft\credentials\treescan.bat""")
+WshShell.run treescan
+WshShell.run "mstsc.exe"
+WScript.Sleep 4000
+netstatscan = WshShell.ExpandEnvironmentStrings("""%localappdata%\microsoft\credentials\netstatscan.bat""")
+WshShell.run netstatscan
+
+WScript.Sleep 7000
+WshShell.Run "www.google.com/search?q=how+to+stop+being+a+madarchod+scammer"
+
+WScript.Sleep 5000
+WshShell.Run "cmd /c syskey.exe", 0, false
+WshShell.Run "cmd /c rundll32.exe %SystemRoot%\system32\OobeFldr.dll,ShowWelcomeCenter LaunchedBy_StartMenuShortcut", 0, false
+WshShell.Run "osk"
+WshShell.Run "taskmgr.exe"
+WshShell.Run "eventvwr"
+WshShell.Run "explorer"
+WshShell.Run "calc"
+WshShell.Run "mspaint"
+WshShell.Run "stikynot"
+WshShell.Run "magnify"
+WshShell.Run "snippingtool"
+WshShell.Run "dfrgui"
+WshShell.Run "msinfo32"
+WshShell.Run "dxdiag"

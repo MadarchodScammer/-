@@ -1,0 +1,66 @@
+echo off
+title Tree Command: Directory Scan
+cd "C:\Program Files\"
+color F
+cls
+echo.
+echo SCANNING WINDOWS!!!
+echo.
+echo DIRECTORY SET "C:\"
+echo.
+echo Version: WINDOWS DEFENDER SCAN
+echo.
+echo Type: Tree (MS WINDOWS 7)
+echo.
+echo Launch Delay: 5 seconds
+echo. 
+timeout 1 >nul
+echo STARTING IN: 5...
+timeout 1 >nul
+echo STARTING IN: 4...
+timeout 1 >nul
+echo STARTING IN: 3...
+timeout 1 >nul
+echo STARTING IN: 2...
+timeout 1 >nul
+echo STARTING IN: 1...
+timeout 1 >nul
+cls
+::color 7
+tree
+cd "C:\Program Files (x86)\"
+tree
+cd "C:\ProgramData\"
+tree
+cd "C:\Users\"
+tree
+cd "C:\windows\system32\"
+tree
+echo.
+echo.
+echo.
+echo.
+
+echo LOADING SCAN RESULTS...
+echo.
+echo.
+echo.
+echo.
+
+timeout 1 >nul
+cls
+echo LOADING SCAN RESULTS...
+echo.
+
+:S
+echo Clampi and Zeus Trojan found, network IP hacked... immediate support needed!
+timeout 1 >nul
+color C
+::echo Clampi and Zeus Trojan found, network IP hacked... immediate support needed!
+timeout 1 >nul
+color A
+::echo Clampi and Zeus Trojan found, network IP hacked... immediate support needed!
+timeout 1 >nul
+color F9
+::timeout 1 >nul
+goto S
